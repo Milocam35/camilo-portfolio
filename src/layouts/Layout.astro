@@ -1,18 +1,21 @@
 ---
-import './src/styles/global.css'
+import "./src/styles/global.css";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/curriculum.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Camilo Portfolio</title>
+  </head>
+  <body
+    class="bg-gradient-to-b from-gray-100 to-white text-gray-900 dark:from-gray-900 dark:to-gray-950 dark:text-white"
+  >
+    <Header />
+    <slot />
+  </body>
 </html>
-

@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #030712;
+    --font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
