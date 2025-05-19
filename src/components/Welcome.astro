@@ -1,15 +1,14 @@
 ---
-import astroLogo from "../assets/astro.svg";
+import Foto from '../assets/Foto.jpeg';
+import Intro from './Subcomponents/Intro.astro';
 ---
 
-<div>
-  <div
-    class="flex flex-col items-center justify-center h-screen bg-cover bg-center"
-  >
-    <img src={astroLogo.src} alt="Astro Logo" class="w-32 mb-4" />
-    <h1 class="text-4xl font-bold">Welcome to Astro!</h1>
-    <p class="mt-2 text-lg">
-      Get started by editing <code>src/pages/index.astro</code>
-    </p>
+<main class="flex flex-col md:flex-row items-center justify-center min-h-[calc(100vh-80px)] p-4 md:p-8 w-full max-w-6xl mx-auto">
+  <Intro/>
+  <!-- Sección de imagen -->
+  <div class="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+    <div class="w-64 h-64 md:w-96 md:h-96 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center overflow-hidden shadow-xl">
+      <img src={Foto.src} alt="Foto de Camilo Andres Millán Mahecha" class="object-cover w-full h-full" />
+    </div>
   </div>
-</div>
+</main>
