@@ -1,25 +1,63 @@
-<!-- Sección de texto -->
-  <div class="w-full md:w-1/2 flex flex-col items-start justify-between h-full py-4 md:pr-8">
-    <div class="text-left">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">Camilo Andres Millán Mahecha</h1>
-      <p class="text-xl md:text-2xl font-semibold text-sky-600 dark:text-sky-400 mb-6">Desarrollador Full Stack</p>
-      <div class="space-y-4 text-gray-700 dark:text-gray-300">
-        <p class="flex items-start">
-          <span class="mr-2">🧠</span>
-          <span>Actualmente cursando un grado en Ciencias de la Computación e Inteligencia Artificial.</span>
-        </p>
-        <p class="flex items-start">
-          <span class="mr-2">💻</span>
-          <span>Desarrollador Web apasionado con especial interés en tecnologías como Python, FastAPI, React.js, Node.js, Java, Spring Boot, REST APIs, GraphQL, Docker y DevOps.</span>
-        </p>
-        <p class="flex items-start">
-          <span class="mr-2">🚀</span>
-          <span>Disfruto construyendo aplicaciones web escalables y explorando nuevas herramientas y frameworks.</span>
-        </p>
-        <p class="flex items-start">
-          <span class="mr-2">🌱</span>
-          <span>Siempre aprendiendo - cada día es una nueva oportunidad para crecer, mejorar y asumir nuevos retos.</span>
-        </p>
-      </div>
+<!-- Sección de presentación -->
+<div class="w-full md:w-1/2 flex flex-col justify-center h-full py-8 px-6 md:pr-10">
+  <div class="space-y-6 text-left animate-fadeIn">
+    <!-- Nombre -->
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+      Camilo Andres Millán Mahecha
+    </h1>
+
+    <!-- Título -->
+    <p class="text-2xl md:text-3xl font-semibold text-sky-600 dark:text-sky-400">
+      Desarrollador Full Stack
+    </p>
+
+    <!-- Línea divisoria -->
+    <div class="w-20 h-1 bg-sky-500 rounded-full mb-4"></div>
+
+    <!-- Descripción general -->
+    <div class="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
+      <p class="flex items-start gap-3">
+        <span class="text-2xl">🧠</span>
+        <span>
+          Actualmente cursando un grado en <strong>Ciencias de la Computación e Inteligencia Artificial</strong>.
+        </span>
+      </p>
+
+      <p class="flex items-start gap-3">
+        <span class="text-2xl">💻</span>
+        <span>
+          <strong>Desarrollo Web y Backend:</strong> Python (FastAPI), JavaScript (Node.js), Java (Spring Boot).  
+          <strong>Frontend:</strong> React.js.  
+          <strong>Machine Learning:</strong> creación y despliegue de modelos con scikit-learn y TensorFlow.  
+          <strong>DevOps:</strong> Docker y CI/CD para despliegues fiables.
+        </span>
+      </p>
+
+      <p class="flex items-start gap-3">
+        <span class="text-2xl">🚀</span>
+        <span>
+          Disfruto construyendo aplicaciones web escalables y explorando nuevas herramientas y frameworks.
+        </span>
+      </p>
+
+      <p class="flex items-start gap-3">
+        <span class="text-2xl">🌱</span>
+        <span>
+          Siempre aprendiendo — cada día es una nueva oportunidad para crecer, mejorar y asumir nuevos retos.
+        </span>
+      </p>
     </div>
   </div>
+</div>
+
+
+<!-- Animación opcional (si no usas una librería de animaciones) -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out both;
+  }
+</style>

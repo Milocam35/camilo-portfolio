@@ -2,7 +2,7 @@
 import Foto2 from "../assets/Foto.jpeg";
 import Intro from "./Subcomponents/Intro.astro";
 import Stack from "./Subcomponents/Stack.astro";
-import Proyects from "./Subcomponents/Proyects.astro";
+import Proyects from "./Subcomponents/Proyects.jsx";
 ---
 
 <main>
@@ -24,7 +24,7 @@ import Proyects from "./Subcomponents/Proyects.astro";
     </div>
   </section>
   <Stack />
-  <Proyects />
+  <Proyects client:load />
   <!-- Call to Action -->
   <div class="text-center mb-12">
     <p class="text-gray-600 dark:text-gray-300 mb-6">
